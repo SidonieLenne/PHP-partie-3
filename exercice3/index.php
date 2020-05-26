@@ -21,15 +21,13 @@
     <title>Exercice 3 PHP</title>
 </head>
 <body>
-    <p><?php
-    /*Version for
-    for ($number=0 ; $number<12 ; $number++){
-        echo $months[$number] , ' ';
-    }*/
+    <ul>
+    <?php
     //Version foreach (spécial tableaux)
     foreach ($months as $element){
-        echo $element , ' ';
-    }
-    ?></p>
+       ?>
+       <li><?= $element; ?></li>
+       <?php } ?>
+    </ul>
 </body>
 </html>
